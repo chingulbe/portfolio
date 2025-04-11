@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Chin Chin Gulbe</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #fff3fb;
+      color: #000;
+    }
+
+    .wrapper {
+      flex: 1;
+    }
+
+    /* Header Section */
+    header {
+      padding: 20px 50px;
+      background-color: #fff3fb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-details h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .profile-details p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    .top-right-img img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 2px solid #000;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .nav li a {
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #ddd;
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    .nav li a.active,
+    .nav li a:hover {
+      background-color: #fff;
+      border: 2px solid #000;
+    }
+
+    /* Main Layout */
+    main {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; /* align bottoms */
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .sample {
+      width: 200px;
+      text-align: center;
+    }
+
+    .sample p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .sample img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 2px solid #000;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .sample:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .sample-detail {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .sample-detail img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 2px solid #000;
+    }
+
+    .description-box {
+      text-align: left;
+      max-width: 500px;
+    }
+
+    .description-box h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      background-color: #fff3fb;
+      margin-top: 60px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="profile-details">
+        <h1>GULBE, CHIN CHIN S.</h1>
+        <p>Commonwealth, Quezon City</p>
+        <p>09958502864</p>
+      </div>
+
+      <ul class="nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACTS</a></li>
+      </ul>
+
+      <div class="top-right-img">
+        <img src="https://i.pinimg.com/474x/1f/17/9b/1f179bc6a83ad9b01d573d197282e74b.jpg" alt="Chin Chin Image" />
+      </div>
+    </header>
+
+    <main>
+      <h2>GRAPHIC DESIGN</h2>
+
+      <div class="gallery">
+        <div class="sample">
+          <p>VIBRANT DESIGN</p>
+          <a href="#vibrant-description">
+            <img src="https://i.pinimg.com/474x/f9/5d/68/f95d687815ea9c4ecc93d9f8c2d6b894.jpg" alt="Vibrant Design" />
+          </a>
+        </div>
+        <div class="sample">
+          <p>MINIMALIST LOGO</p>
+          <a href="#minimalist-description">
+            <img src="https://i.pinimg.com/474x/b7/28/5c/b7285cee7ab6e1f21731d542929220d6.jpg" alt="Minimalist Logo" />
+          </a>
+        </div>
+        <div class="sample">
+          <p>CREATIVE TYPOGRAPHY</p>
+          <a href="#creative-description">
+            <img src="https://i.pinimg.com/474x/08/a0/e2/08a0e21417edda0a79e330e9617cc384.jpg" alt="Creative Typography" />
+          </a>
+        </div>
+        <div class="sample">
+          <p>DYNAMIC ILLUSION ART</p>
+          <a href="#dynamic-description">
+            <img src="https://i.pinimg.com/474x/50/7e/1a/507e1ab3a1ad3e0313a7f218540af454.jpg" alt="Dynamic Illusion Art" />
+          </a>
+        </div>
+      </div>
+
+      <div class="sample-detail" id="vibrant-description">
+        <div>
+          <p style="font-weight: bold; color: #999; text-align: center;">VIBRANT DESIGN</p>
+          <img src="https://i.pinimg.com/474x/f9/5d/68/f95d687815ea9c4ecc93d9f8c2d6b894.jpg" alt="Vibrant Design" />
+        </div>
+        <div class="description-box">
+          <h3>DESCRIPTION</h3>
+          <p>This vibrant design blends rich colors and intricate details to create a striking visual impact. The combination of contrasting hues emphasizes the dynamic energy of the composition, making it ideal for modern advertising, branding, and digital art projects.</p>
+        </div>
+      </div>
+
+      <div class="sample-detail" id="minimalist-description">
+        <div>
+          <p style="font-weight: bold; color: #999; text-align: center;">MINIMALIST LOGO</p>
+          <img src="https://i.pinimg.com/474x/b7/28/5c/b7285cee7ab6e1f21731d542929220d6.jpg" alt="Minimalist Logo" />
+        </div>
+        <div class="description-box">
+          <h3>DESCRIPTION</h3>
+          <p>This minimalist logo design is sleek and modern, utilizing clean lines and simple shapes. It effectively represents a brand's core message with minimal distractions, making it ideal for companies looking for a professional and timeless logo.</p>
+        </div>
+      </div>
+
+      <div class="sample-detail" id="creative-description">
+        <div>
+          <p style="font-weight: bold; color: #999; text-align: center;">CREATIVE TYPOGRAPHY</p>
+          <img src="https://i.pinimg.com/474x/08/a0/e2/08a0e21417edda0a79e330e9617cc384.jpg" alt="Creative Typography" />
+        </div>
+        <div class="description-box">
+          <h3>DESCRIPTION</h3>
+          <p>This creative typography piece combines artistic font choices and layout to convey a message in an engaging way. The typography itself becomes the artwork, highlighting the beauty and power of words in a visual context.</p>
+        </div>
+      </div>
+
+      <div class="sample-detail" id="dynamic-description">
+        <div>
+          <p style="font-weight: bold; color: #999; text-align: center;">DYNAMIC ILLUSION ART</p>
+          <img src="https://i.pinimg.com/474x/50/7e/1a/507e1ab3a1ad3e0313a7f218540af454.jpg" alt="Dynamic Illusion Art" />
+        </div>
+        <div class="description-box">
+          <h3>DESCRIPTION</h3>
+          <p>This dynamic illusion art plays with perspective and shapes to create a sense of depth and movement. It challenges the viewer's perception, offering a visually stimulating experience perfect for contemporary art and modern design projects.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Chin Chin Gulbe. All rights reserved.
+  </footer>
+
+</body>
+</html>

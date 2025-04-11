@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Chin Chin Gulbe</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #fff3fb;
+      color: #000;
+    }
+
+    .wrapper {
+      flex: 1;
+    }
+
+    /* Header Section */
+    header {
+      padding: 20px 50px;
+      background-color: #fff3fb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-details h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .profile-details p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    .top-right-img img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 2px solid #000;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .nav li a {
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #ddd;
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    .nav li a.active,
+    .nav li a:hover {
+      background-color: #fff;
+      border: 2px solid #000;
+    }
+
+    /* Main Layout */
+    main {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons a {
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #ddd;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 25px;
+      border: 2px solid #000;
+      transition: 0.3s;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #fff;
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      background-color: #fff3fb;
+      margin-top: 60px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="profile-details">
+        <h1>GULBE, CHIN CHIN S.</h1>
+        <p>Commonwealth, Quezon City</p>
+        <p>09958502864</p>
+      </div>
+
+      <ul class="nav">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACTS</a></li>
+      </ul>
+
+      <div class="top-right-img">
+        <img src="https://i.pinimg.com/474x/1f/17/9b/1f179bc6a83ad9b01d573d197282e74b.jpg" alt="Chin Chin Image" />
+      </div>
+    </header>
+
+    <main>
+      <h2>Design. Passion. Purpose.</h2>
+      <p>Good day! I’m Chin Chin Gulbe — a visual storyteller and creative professional based in Quezon City. With a passion for design and an eye for detail, I specialize in turning ideas into compelling visual experiences. Whether you’re here to explore my work or looking to collaborate, I’m glad to have you.
+      </p>
+      <div class="cta-buttons">
+        <a href="about.html">Learn More About Me</a>
+        <a href="portfolio.html">See My Work</a>
+        <a href="contact.html">Get in Touch</a>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Chin Chin Gulbe. All rights reserved.
+  </footer>
+
+</body>
+</html>
